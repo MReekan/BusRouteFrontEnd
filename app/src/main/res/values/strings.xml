@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Bus Route</string>
+    <string name="colombo_bus_route">Colombo Bus Route</string>
+    <string name="start_to_destination">Start to Destination</string>
+    <string name="current_place_to_destination">Current Place to Destination</string>
+    <string name="find_the_route">Find The Route</string>
+    <string name="need_help">Need Help</string>
+
+    <color name="ass">#495868</color>
+</resources>

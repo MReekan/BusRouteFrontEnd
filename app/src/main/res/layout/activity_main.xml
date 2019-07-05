@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="326dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:text="@string/colombo_bus_route"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorLink="@android:color/holo_blue_bright"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="16dp" />
+
+
+    <ImageView
+        android:id="@+id/imageBus"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="-3dp"
+        android:layout_marginRight="-3dp"
+        app:srcCompat="@drawable/bus1" />
+
+    <Button
+        android:id="@+id/startDestination"
+        android:layout_width="245dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/imageBus"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"
+        android:background="#495868"
+        android:onClick="startToDestination"
+        android:text="@string/start_to_destination"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/findRoute"
+        android:layout_width="245dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/startDestination"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"
+        android:background="#495868"
+        android:onClick="findTheRoute"
+        android:text="@string/find_the_route"
+        android:textColor="@color/white" />
+
+
+    <Button
+        android:id="@+id/currentDestination"
+        android:layout_width="245dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/findRoute"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"
+        android:background="#495868"
+        android:onClick="currentToDestination"
+        android:text="@string/current_place_to_destination"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/needHelp"
+        android:layout_width="245dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/currentDestination"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"
+        android:background="#495868"
+        android:onClick="needHelp"
+        android:text="@string/need_help"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
