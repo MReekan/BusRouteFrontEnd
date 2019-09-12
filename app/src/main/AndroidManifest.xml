@@ -9,10 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".CurrentLocationActivity"></activity>
         <activity android:name=".NeedHelpActivity" />
         <activity android:name=".CurrentToDestinationActivity" />
         <activity android:name=".FindTheRouteActivity" />
         <activity android:name=".StartToDestinationActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDQ2UO6exL5KM4kVa7AjiXUsTlrTqfJzRo" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

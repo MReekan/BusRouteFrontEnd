@@ -1,50 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
     tools:context=".NeedHelpActivity">
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="167dp"
-        android:layout_height="37dp"
+        android:id="@+id/textMainMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="90dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="2dp"
         android:text="Main Menu Details"
-        tools:layout_editor_absoluteX="107dp"
-        tools:layout_editor_absoluteY="37dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        android:textColor="@color/white"
+        android:textColorLink="@color/white"
+        android:textSize="24sp" />
 
     <TextView
-        android:id="@+id/textView6"
-        android:layout_width="199dp"
-        android:layout_height="51dp"
+        android:id="@+id/textStartDestination"
+        android:layout_width="334dp"
+        android:layout_height="89dp"
+        android:layout_below="@+id/textMainMenu"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="49dp"
+        android:background="@drawable/border_background"
         android:text="Start to destination - Get the routes between two places and if you continue this then you can set the Alarm also"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        android:textColor="@color/white"
+        android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/textView7"
-        android:layout_width="208dp"
-        android:layout_height="49dp"
+        android:id="@+id/textCurrentDestination"
+        android:layout_width="336dp"
+        android:layout_height="96dp"
+        android:layout_below="@+id/textStartDestination"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/border_background"
         android:text="Current place to destination - Get your current place automatically and search for the routes between your place and another place"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        android:textColor="@color/white"
+        android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/textView8"
-        android:layout_width="211dp"
-        android:layout_height="179dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
+        android:id="@+id/textFindRoute"
+        android:layout_width="336dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/textCurrentDestination"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/border_background"
         android:text="Find the route - Get the route detail of a specific route number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        android:textColor="@color/white"
+        android:textSize="18sp" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

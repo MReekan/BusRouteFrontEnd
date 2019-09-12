@@ -63,6 +63,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
+    <Button
+        android:id="@+id/buttonCurrentPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Click"
+        android:layout_marginRight="35dp"
+        android:onClick="currentLocation"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:layout_editor_absoluteX="281dp" />
+
     <TextView
         android:id="@+id/textView5"
         android:layout_width="190dp"
@@ -92,12 +103,12 @@
         android:id="@+id/button2"
         android:layout_width="122dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="43dp"
-        android:layout_marginLeft="43dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="204dp"
         android:text="Cancel"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <Button
         android:id="@+id/button8"
@@ -105,7 +116,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginLeft="60dp"
-        android:layout_marginTop="312dp"
+        android:layout_marginTop="316dp"
         android:layout_marginEnd="35dp"
         android:layout_marginRight="35dp"
         android:text="Search"

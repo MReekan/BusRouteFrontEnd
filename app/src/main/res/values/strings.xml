@@ -7,4 +7,12 @@
     <string name="need_help">Need Help</string>
 
     <color name="ass">#495868</color>
+    <array name="start_place">
+        <item>kelaniya</item>
+        <item>dalugama</item>
+    </array>
+    <array name="destination_place">
+        <item>colombo</item>
+        <item>thorana junction</item>
+    </array>
 </resources>
