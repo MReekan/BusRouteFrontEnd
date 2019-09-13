@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CurrentLocationActivity"></activity>
+        <activity android:name=".ShowRouteListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CurrentLocationActivity" />
         <activity android:name=".NeedHelpActivity" />
         <activity android:name=".CurrentToDestinationActivity" />
         <activity android:name=".FindTheRouteActivity" />
