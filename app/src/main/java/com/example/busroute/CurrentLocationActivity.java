@@ -116,27 +116,27 @@ public class CurrentLocationActivity extends AppCompatActivity {
         }
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == PLACE_AUTOCOMPLETE_REQUEST_CODE) {
-            if (resultCode == RESULT_OK) {
-                Place place = PlaceAutocomplete.getPlace(this, data);
-                if (!place.getAddress().toString().contains(place.getName())) {
-                    txtLocationAddress.setText(place.getName() + ", " + place.getAddress());
-                } else {
-                    txtLocationAddress.setText(place.getAddress());
-                }
-
-                CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(place.getLatLng(), 16);
-                map.animateCamera(cameraUpdate);
-
-
-            } else if (resultCode == PlaceAutocomplete.RESULT_ERROR) {
-                printToast("Error in retrieving place info");
-
-            }
-        }
-    }
+//    @Override
+//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+//        if (requestCode == PLACE_AUTOCOMPLETE_REQUEST_CODE) {
+//            if (resultCode == RESULT_OK) {
+//                Place place = PlaceAutocomplete.getPlace(this, data);
+//                if (!place.getAddress().toString().contains(place.getName())) {
+//                    txtLocationAddress.setText(place.getName() + ", " + place.getAddress());
+//                } else {
+//                    txtLocationAddress.setText(place.getAddress());
+//                }
+//
+//                CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(place.getLatLng(), 16);
+//                map.animateCamera(cameraUpdate);
+//
+//
+//            } else if (resultCode == PlaceAutocomplete.RESULT_ERROR) {
+//                printToast("Error in retrieving place info");
+//
+//            }
+//        }
+//    }
 
     private void printToast(String message) {
         Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
