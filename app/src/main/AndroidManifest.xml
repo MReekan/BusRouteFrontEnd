@@ -19,7 +19,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CurrentLocationActivity" />
         <activity android:name=".NeedHelpActivity" />
         <activity android:name=".CurrentToDestinationActivity" />
         <activity android:name=".FindTheRouteActivity" />

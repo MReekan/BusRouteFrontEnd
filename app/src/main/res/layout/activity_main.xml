@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/back9"
     tools:context=".MainActivity">
 
     <TextView
@@ -30,10 +31,10 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="-3dp"
-        android:layout_marginRight="-3dp"
-        app:srcCompat="@drawable/bus1" />
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        app:srcCompat="@drawable/bus3" />
 
     <Button
         android:id="@+id/startDestination"

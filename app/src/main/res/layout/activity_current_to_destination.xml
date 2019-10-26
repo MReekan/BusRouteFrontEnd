@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back9"
     tools:context=".CurrentToDestinationActivity">
 
     <TextView
@@ -58,7 +59,7 @@
         android:layout_marginLeft="50dp"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="From:-Ex : Kelaniya"
+        android:hint="From"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -67,12 +68,13 @@
         android:id="@+id/buttonCurrentPlace"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Click"
-        android:layout_marginRight="35dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:onClick="currentLocation"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        tools:layout_editor_absoluteX="281dp" />
+        android:text="Click"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/textView5"
@@ -82,20 +84,32 @@
         android:layout_marginLeft="50dp"
         android:layout_marginTop="32dp"
         android:text="Destination Place"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtFrom" />
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="To:- Ex: Colombo"
-        android:inputType="textPersonName"
-        android:text=""
+    <!--<EditText-->
+        <!--android:id="@+id/editText2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="48dp"-->
+        <!--android:layout_marginLeft="48dp"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:ems="10"-->
+        <!--android:hint="To:- Ex: Colombo"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:text=""-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/textView5" />-->
+    <Spinner
+        android:id="@+id/spinnerDestinationPlace"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:entries="@array/destination_place"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.738"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
@@ -107,6 +121,7 @@
         android:layout_marginLeft="56dp"
         android:layout_marginTop="204dp"
         android:text="Cancel"
+        android:onClick="backToHome"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtFrom" />
 
@@ -120,6 +135,7 @@
         android:layout_marginEnd="35dp"
         android:layout_marginRight="35dp"
         android:text="Search"
+        android:onClick="showRouteList"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/button2"

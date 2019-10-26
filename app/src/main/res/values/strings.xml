@@ -8,11 +8,27 @@
 
     <color name="ass">#495868</color>
     <array name="start_place">
+        <item>From</item>
         <item>kelaniya</item>
-        <item>dalugama</item>
+        <item>Nugegoda</item>
+        <item>Pettah</item>
+        <item>Maradana</item>
+        <item>Galle face</item>
+        <item>Nittampuwa</item>
+        <item>Kadawatha</item>
+        <item>Kribathgoda</item>
     </array>
     <array name="destination_place">
-        <item>colombo</item>
-        <item>thorana junction</item>
+        <item>To</item>
+        <item>Pettah</item>
+        <item>Town Hall</item>
+        <item>Baththaramulla</item>
+        <item>Kadawatha</item>
+        <item>Kribathgoda</item>
+        <item>Moratuwa</item>
+        <item>Kollupitiya</item>
+        <item>Bambalapitiya</item>
+        <item>Wellawatta</item>
+
     </array>
 </resources>

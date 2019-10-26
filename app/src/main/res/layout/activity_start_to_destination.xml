@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0098D4"
+    android:background="@drawable/back9"
     android:hapticFeedbackEnabled="false"
     tools:context=".StartToDestinationActivity">
 
@@ -46,7 +46,6 @@
         android:layout_marginTop="16dp"
         android:layout_marginBottom="56dp"
         android:text="Start Place"
-        android:textColor="@color/white"
         android:textSize="18sp"
 
         />
@@ -72,7 +71,6 @@
         android:layout_marginTop="40dp"
         android:layout_marginBottom="70dp"
         android:text="Destination Place"
-        android:textColor="@color/white"
         android:textSize="18sp" />
 
     <Spinner

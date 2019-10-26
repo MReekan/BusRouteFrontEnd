@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back9"
     tools:context=".FindTheRouteActivity">
 
     <TextView
@@ -74,6 +75,7 @@
         android:layout_marginStart="43dp"
         android:layout_marginLeft="43dp"
         android:layout_marginTop="64dp"
+        android:onClick="backToHome"
         android:text="Cancel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtFrom" />
@@ -88,6 +90,7 @@
         android:layout_marginEnd="35dp"
         android:layout_marginRight="35dp"
         android:text="Search"
+        android:onClick="showPathList"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/button2"

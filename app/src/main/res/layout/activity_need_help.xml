@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_bright"
+    android:background="@drawable/back9"
     tools:context=".NeedHelpActivity">
 
     <TextView
@@ -16,7 +16,6 @@
         android:layout_marginLeft="30dp"
         android:layout_marginTop="2dp"
         android:text="Main Menu Details"
-        android:textColor="@color/white"
         android:textColorLink="@color/white"
         android:textSize="24sp" />
 
@@ -28,9 +27,8 @@
         android:layout_marginStart="25dp"
         android:layout_marginLeft="25dp"
         android:layout_marginTop="49dp"
-        android:background="@drawable/border_background"
+        android:background="@color/colorPrimary"
         android:text="Start to destination - Get the routes between two places and if you continue this then you can set the Alarm also"
-        android:textColor="@color/white"
         android:textSize="18sp" />
 
     <TextView
@@ -43,9 +41,8 @@
         android:layout_marginStart="25dp"
         android:layout_marginLeft="25dp"
         android:layout_marginTop="50dp"
-        android:background="@drawable/border_background"
+        android:background="@color/colorPrimary"
         android:text="Current place to destination - Get your current place automatically and search for the routes between your place and another place"
-        android:textColor="@color/white"
         android:textSize="18sp" />
 
     <TextView
@@ -56,9 +53,8 @@
         android:layout_marginStart="25dp"
         android:layout_marginLeft="25dp"
         android:layout_marginTop="50dp"
-        android:background="@drawable/border_background"
+        android:background="@color/colorPrimary"
         android:text="Find the route - Get the route detail of a specific route number"
-        android:textColor="@color/white"
         android:textSize="18sp" />
 
 </RelativeLayout>
