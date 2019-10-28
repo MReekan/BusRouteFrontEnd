@@ -22,8 +22,6 @@ public class TravellingPathAdapter extends RecyclerView.Adapter<TravellingPathAd
 
     @Override
     public TravellingPathViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        //View view = LayoutInflater.from(mCtx).inflate(R.layout.recyclerview_paths, parent, false);
-        //return new TravellingPathViewHolder(view);
         View view = LayoutInflater.from(mCtx).inflate(R.layout.recyclerview_paths, parent, false);
         //TravellingPathAdapter.TravellingPathViewHolder travellingPathViewHolder = new TravellingPathAdapter.TravellingPathViewHolder(view);
         return new TravellingPathViewHolder(view);
@@ -33,19 +31,12 @@ public class TravellingPathAdapter extends RecyclerView.Adapter<TravellingPathAd
     public void onBindViewHolder(TravellingPathViewHolder holder, int position) {
         TravellingPath path = travellingPathList.get(position);
 
-        Log.i("MainActivity",path.getTicket_fee());
-        Log.i("SecondActivity","===================");
-        Log.i("num","7");
-
         holder.textViewTicket.setText("Ticket: " + path.getTicket_fee());
 
     }
 
     @Override
     public int getItemCount() {
-        Log.i("sssss",Integer.toString(travellingPathList.size()));
-        Log.i("ihiuig","_________________________");
-
         return travellingPathList.size();
     }
 

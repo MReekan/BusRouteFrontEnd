@@ -2,6 +2,7 @@ package com.example.busroute;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
@@ -169,7 +170,8 @@ public class CurrentToDestinationActivity extends AppCompatActivity implements L
             Toast errorToast=Toast.makeText(CurrentToDestinationActivity.this, "Please select the To", Toast.LENGTH_SHORT);
             errorToast.show();
         }else{
-        setContentView(R.layout.recyclerview_current_path);
+            Intent intentLoadNewActivity =new Intent(CurrentToDestinationActivity.this,CurrentRouteActivity.class);
+            startActivity(intentLoadNewActivity);
         }
     }
 }

@@ -1,21 +1,16 @@
 package com.example.busroute;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 
-import com.google.firebase.database.DatabaseReference;
-
 public class StartToDestinationActivity extends AppCompatActivity {
 
-//    EditText locationOne,locationTwo;
-//
-//    DatabaseReference dbTravellingPath;
     Spinner from,to;
 
     @Override
@@ -38,7 +33,6 @@ public class StartToDestinationActivity extends AppCompatActivity {
         String path_2     = to.getSelectedItem().toString();
 
         if (TextUtils.equals(path_1,"From")){
-          // txtLat.setError("Current place is required");
             Toast errorToast=Toast.makeText(StartToDestinationActivity.this, "Please select the From", Toast.LENGTH_SHORT);
             errorToast.show();
         }else if (TextUtils.equals(path_2,"To")){
@@ -46,7 +40,8 @@ public class StartToDestinationActivity extends AppCompatActivity {
             errorToast.show();
         }
         else{
-        setContentView(R.layout.activity_show_route_list);
+            Intent intentLoadNewActivity =new Intent(StartToDestinationActivity.this,BigilActivity.class);
+            startActivity(intentLoadNewActivity);
         }
     }
 
